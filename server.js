@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
   });
 });
 
+app.use(express.static('public'));
+
 app.listen(PORT, function () {
-  console.log("Pop Pop's Express server is up on port " + PORT);
+  console.log("Express server is up and running on port " + PORT);
 });
